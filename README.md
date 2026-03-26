@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/natsu-root/gurung-transliteration
 
-**Live Demo:** http://localhost:4200/
+**Live Demo:** https://natsu-root.github.io/gurung-transliteration/
 
 Gurung (Khema) transliteration tool built with Angular 17. Features custom font (GurungKhema.ttf) and KhemaTranslitService for Roman-to-Gurung conversion.
 
