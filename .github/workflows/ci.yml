@@ -1,0 +1,33 @@
+name: Angular CI
+
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ 'main' ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [24.x]  # Use Node 24 to address deprecation
+
+    steps:
+    - uses: actions/checkout@v5  # Updated to v5 (Node 24 compatible)
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v5  # Latest setup-node
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm ci
+    - name: Lint
+      run: npm run lint --if-present
+    - name: Build
+      run: npm run build --if-present
+    - name: Test
+      run: npm run test -- --no-watch --code-coverage

@@ -1,5 +1,7 @@
 # Gurung Transliteration App
 
+[![CI](https://github.com/natsu-root/gurung-transliteration/actions/workflows/ci.yml/badge.svg)](https://github.com/natsu-root/gurung-transliteration/actions/workflows/ci.yml)
+
 **Repository:** https://github.com/natsu-root/gurung-transliteration
 
 **Live Demo:** https://natsu-root.github.io/gurung-transliteration/
@@ -13,6 +15,10 @@ Run `ng serve` for a dev server: http://localhost:4200/.
 ## Build & Deploy
 
 `ng build` for production build (dist/).
+
+## CI/CD
+
+Automated CI workflow tests lint/build on push/PR to main using Node.js 24 (fixes Node 20 deprecation warning).
 
 ## Generated with Angular CLI v17.3.17
 
