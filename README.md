@@ -1,4 +1,4 @@
-# GurungTransliterationApp
+# Gurung Transliteration App\n\n[![GitHub Repo](https://github.com/natsu-root/gurung-transliteration/actions/workflows/ci.yml/badge.svg)](https://github.com/natsu-root/gurung-transliteration)\n\nLive Demo: http://localhost:4200/\n\nRepo: https://github.com/natsu-root/gurung-transliteration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
