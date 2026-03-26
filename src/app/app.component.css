@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'GurungKhema';
+    src: url('/assets/GurungKhema.ttf') format('truetype');
+}
+
+.khema-font {
+    font-family: 'GurungKhema', sans-serif !important;
+    font-size: 2rem !important;
+    /* Larger so the symbols are readable */
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #7f8c8d;
+}
+
+.translator-workspace {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+    height: 60vh;
+    min-height: 400px;
+}
+
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+}
+
+.panel-header {
+    background: #f8f9fa;
+    padding: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e1e8ed;
+    color: #2c3e50;
+}
+
+.text-area {
+    flex: 1;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    resize: none;
+    outline: none;
+    line-height: 1.5;
+}
+
+.input-panel .text-area {
+    background: #ffffff;
+}
+
+.output-panel .text-area {
+    background: #fcfcfc;
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn {
+    background: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1) rotate(15deg);
+    background: #f0f7fc;
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+
+.toggle-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #3498db;
+    margin-top: -2px;
+}
+
+.arrow-icon {
+    font-size: 1.3rem;
+    color: #3498db;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.keyboard-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.keyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 12px;
+    padding: 1.5rem;
+    background: #f8f9fa;
+}
+
+.key {
+    background: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    user-select: none;
+    position: relative;
+}
+
+.key:hover {
+    background: #f1f5f9;
+    border-color: #3498db;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.15);
+    color: #3498db;
+}
+
+.key:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.1);
+    background: #e2e8f0;
+}
+
+.gurung-char {
+    font-family: 'GurungKhema', sans-serif;
+    font-size: 2.2rem;
+}
+
+.eng-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.sign-name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    margin-top: -4px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.1;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .translator-workspace {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .control-panel {
+        transform: rotate(90deg);
+        padding: 1rem 0;
+    }
+
+    .text-area {
+        min-height: 250px;
+    }
+}
