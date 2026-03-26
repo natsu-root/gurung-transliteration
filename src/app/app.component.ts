@@ -93,6 +93,16 @@ export class AppComponent {
     this.updateOutput();
   }
 
+  insertSpace() {
+    this.inputText.update(val => val + ' ');
+    this.updateOutput();
+  }
+
+  deleteChar() {
+    this.inputText.update(val => val.slice(0, -1));
+    this.updateOutput();
+  }
+
   toggleDirection() {
     this.isLatinToGurung.update(val => !val);
     const currInput = this.inputText();

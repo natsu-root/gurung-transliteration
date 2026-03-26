@@ -25,7 +25,8 @@
         <span>{{ isLatinToGurung() ? 'Latin (Input)' : 'Gurung Khema (Input)' }}</span>
       </div>
       <textarea class="text-area" [class.khema-font]="!isLatinToGurung()" placeholder="Start typing..."
-        [value]="inputText()" (input)="onTextInput($event)" spellcheck="false">
+        [value]="inputText()" (input)="onTextInput($event)" spellcheck="false"
+        [attr.inputmode]="!isLatinToGurung() ? 'none' : null">
       </textarea>
     </div>
 
@@ -58,6 +59,16 @@
         <span class="eng-label">{{ keyMap.eng }}</span>
       </button>
       }
+      <button class="key action-key" (click)="insertSpace()">
+        <span class="gurung-char">␣</span>
+        <span class="sign-name">SPACE</span>
+        <span class="eng-label">Space</span>
+      </button>
+      <button class="key action-key" (click)="deleteChar()">
+        <span class="gurung-char">⌫</span>
+        <span class="sign-name">BACKSPACE</span>
+        <span class="eng-label">Delete</span>
+      </button>
     </div>
   </section>
 </div>
