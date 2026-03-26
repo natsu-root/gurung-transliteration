@@ -140,9 +140,9 @@
 
 .keyboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 12px;
-    padding: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    gap: 8px;
+    padding: 1rem;
     background: #f8f9fa;
 }
 
@@ -150,15 +150,15 @@
     background: #ffffff;
     color: #2c3e50;
     border: 1px solid #e1e8ed;
-    border-radius: 10px;
-    padding: 0.5rem;
+    border-radius: 8px;
+    padding: 0.4rem;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70px;
+    min-height: 55px;
     user-select: none;
     position: relative;
 }
@@ -179,12 +179,12 @@
 
 .gurung-char {
     font-family: 'GurungKhema', sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .eng-label {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: #64748b;
     margin-top: 2px;
     font-weight: 600;
@@ -192,9 +192,9 @@
 
 .sign-name {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     color: #94a3b8;
-    margin-top: -4px;
+    margin-top: -2px;
     text-transform: capitalize;
     text-align: center;
     line-height: 1.1;
@@ -233,26 +233,29 @@
     }
 
     .keyboard-grid {
-        grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
-        gap: 8px;
-        padding: 0.8rem;
+        grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+        gap: 5px;
+        padding: 0.5rem;
     }
 
     .key {
-        min-height: 55px;
-        padding: 0.25rem;
+        min-height: 48px;
+        padding: 0.2rem;
+        border-radius: 6px;
     }
 
     .gurung-char {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .eng-label {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .sign-name {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
+        line-height: 1;
+        margin-top: 0;
     }
 
     .action-key {
