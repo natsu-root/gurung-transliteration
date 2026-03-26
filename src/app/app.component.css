@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GurungKhema';
-    src: url('/assets/GurungKhema.ttf') format('truetype');
+    src: url('../assets/GurungKhema.ttf') format('truetype');
 }
 
 .khema-font {
@@ -231,30 +231,30 @@
         min-height: 150px;
         padding: 1rem;
     }
-    
+
     .keyboard-grid {
         grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
         gap: 8px;
         padding: 0.8rem;
     }
-    
+
     .key {
         min-height: 55px;
         padding: 0.25rem;
     }
-    
+
     .gurung-char {
         font-size: 1.8rem;
     }
-    
+
     .eng-label {
         font-size: 0.8rem;
     }
-    
+
     .sign-name {
         font-size: 0.55rem;
     }
-    
+
     .action-key {
         grid-column: span 2;
     }
